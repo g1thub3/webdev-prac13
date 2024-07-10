@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <label for="userid">User id:</label>
+        <input type="text" id="userid" minlength="5" maxlength="12" required>
+        <br><br>
+        <label for="pass">Password:</label>
+        <input type="text" id="pass" minlength="7" maxlength="12" required>
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address">
+        <br><br>
+        <label for="country">Country:</label>
+        <select id="country" required>
+            <option value="none">(Please select a country)</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Narnia">Narnia</option>
+        </select>
+        <br><br>
+        <label for="zipcode">ZIP Code:</label>
+        <input type="number" id="zipcode" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+        <br><br>
+        <label>Sex:</label>
+        <input type="radio" id="sexM" value="Male" name="sex" required>
+        <label for="sexM">Male</label>
+        <input type="radio" id="sexF" value="Female" name="sex" required>
+        <label for="sexF">Female</label>
+        <br><br>
+        <label>Language:</label>
+        <input type="checkbox" id="english" value="English" required>
+        <label for="english">English</label>
+        <input type="checkbox" id="nonenglish" value="Non English" required>
+        <label for="nonenglish">Non English</label>
+        <br><br>
+        <label for="about">About:</label>
+        <textarea rows="20" cols="40" id="about"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
